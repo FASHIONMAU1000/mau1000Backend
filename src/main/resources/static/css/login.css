@@ -1,0 +1,61 @@
+/* Overall page styling - Bauhaus-inspired */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container styling */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0; /* Bauhaus favored sharp corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form input fields styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+    color: #333; /* Dark grey for text */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #333; /* Dark borders */
+    border-radius: 0; /* Bauhaus favored sharp corners */
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    background-color: #ff0000; /* Primary color - Red */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0; /* Sharp corners */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker shade of red on hover */
+}

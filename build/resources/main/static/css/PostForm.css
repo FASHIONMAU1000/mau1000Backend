@@ -1,0 +1,19 @@
+/* Form container styling */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0; /* Sharp corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Adjust width as needed */
+    margin: auto;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #333; /* Dark borders */
+    border-radius: 0; /* Sharp corners */
+    box-sizing: border-box;
+    resize: vertical; /* Allows vertical resizing */
+}
