@@ -18,9 +18,15 @@ import java.util.List;
 public class postController {
     private final PostService postService;
     @PostMapping
-    public void addPost(Post post) {
+    public void addPost(Post post, HttpServletResponse response) throws IOException {
         log.info("addPost");
         postService.save(post);
+        redirect(response);
+    }
+
+    public void redirect(HttpServletResponse response) throws IOException {
+        log.info("redirect");
+        response.sendRedirect("/post");
     }
 
     @PutMapping
