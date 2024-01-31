@@ -4,6 +4,7 @@ import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import jakarta.persistence.*;
 import lombok.Getter;
 
+import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +25,10 @@ public class Member {
     @Column(name = "password")
     String password;
 
+    @NotNull
     @Column(name = "role")
-    
+    Role role;
+
 
     @OneToMany(mappedBy = "member")
     List<Post> posts = new ArrayList<>();

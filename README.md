@@ -11,7 +11,6 @@
 
 ### Prerequisites
 
-"to be write"
 springboot configuration processor 3.2.2
 <br>
 springboot starter data jpa 3.2.2
