@@ -4,11 +4,13 @@ import com.domain.Post;
 import com.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class PostService {
     private final PostRepository postRepository;
 
@@ -25,6 +27,7 @@ public class PostService {
     public Post findById(Long id){
         return postRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
     }
+    @Transactional(readOnly = true)
     public List<Post> findAll(){
         return postRepository.findAll();
     }

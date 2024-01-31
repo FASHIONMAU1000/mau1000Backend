@@ -24,6 +24,9 @@ public class Member {
     @Column(name = "password")
     String password;
 
+    @Column(name = "role")
+    
+
     @OneToMany(mappedBy = "member")
     List<Post> posts = new ArrayList<>();
 

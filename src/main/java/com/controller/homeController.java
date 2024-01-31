@@ -20,19 +20,20 @@ public class homeController {
 
     @RequestMapping("/")
     public String home() {
-        log.info("home");
         return "index";
     }
+
     @RequestMapping("/login")
     public String login() {
         //TODO: add login logic
         log.info("login");
         return "login";
     }
+
     @RequestMapping("/post")
     public String post(Model model) {
         List<Post> posts = postService.findAll();
-        model.addAttribute("posts",posts);
+        model.addAttribute("posts", posts);
         log.info("post");
         return "post";
     }
@@ -43,4 +44,10 @@ public class homeController {
         model.addAttribute("Post", post);
         return "post/form";
     }
+
+    @GetMapping("/validation")
+    public String validation() {
+        return "validation";
+    }
+
 }

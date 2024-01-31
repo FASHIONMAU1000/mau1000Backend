@@ -9,17 +9,31 @@
 
 ## Getting Started
 
-"to be write"
-
 ### Prerequisites
 
 "to be write"
-
+springboot configuration processor 3.2.2
+<br>
+springboot starter data jpa 3.2.2
+<br>
+lombok 1.18.30
+<br>
+springboot starter security 3.2.2
+<br>
+springboot starter thyme leaf 3.2.2
+<br>
+springboot starter web 3.2.2
+<br>
+myspl connector java 8.3.0
+<br>
+spring restdocs mockmvc 3.0.1
+<br>
+spring security test 6.2.1
 
 
 ### And coding style tests
 
-"to be write"
+"to be written"
 
 
 ### Break down into end-to-end tests
@@ -29,17 +43,14 @@
 
 
 ## Running the Tests
-
-"to be write"
+"to be written"
 
 
 ### Installing
-
-"to be write"
+"to be written"
 
 ## Deployment
-
-"to be write"
+"to be written"
 
 
 ## Built With
